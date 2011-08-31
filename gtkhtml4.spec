@@ -6,11 +6,11 @@
 
 Summary: HTML rendering/editing library
 Name: gtkhtml4
-Version: 4.0.1
+Version: 4.0.2
 Release: %mkrel 1
 License: LGPLv2+
 Group: Graphical desktop/GNOME
-Source0: http://ftp.gnome.org/pub/GNOME/sources/gtkhtml/%{package_name}-%{version}.tar.bz2
+Source0: http://ftp.gnome.org/pub/GNOME/sources/gtkhtml/%{package_name}-%{version}.tar.xz
 URL:		http://ftp.gnome.org/pub/gnome/sources/gtkhtml/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	libgail-3.0-devel >= 3.0.2
