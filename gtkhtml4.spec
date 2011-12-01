@@ -74,13 +74,13 @@ This package contains the files necessary to develop applications with GtkHTML.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %{find_lang} %{package_name}-%{api_version}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %{package_name}-%{api_version}.lang
 %defattr(-, root, root)
