@@ -12,6 +12,7 @@ License: LGPLv2+
 Group: Graphical desktop/GNOME
 URL: http://ftp.gnome.org/pub/gnome/sources/gtkhtml/
 Source0: http://ftp.gnome.org/pub/GNOME/sources/gtkhtml/%{oname}-%{version}.tar.xz
+Patch0:	gtkhtml-4.2.2_g_thread_init.patch
 
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(enchant) >= 1.1.7
@@ -69,10 +70,11 @@ This package contains the files necessary to develop applications with GtkHTML.
 
 %prep
 %setup -qn %{oname}-%{version}
+%apply_patches
 
 %build
 %configure2_5x \
-	--disable-static 
+	--disable-static \
 	--program-suffix=4
 
 %make
