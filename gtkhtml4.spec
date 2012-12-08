@@ -6,12 +6,12 @@
 
 Summary: HTML rendering/editing library
 Name: gtkhtml4
-Version: 4.4.4
+Version: 4.6.1
 Release: 1
 License: LGPLv2+
 Group: Graphical desktop/GNOME
 URL: http://ftp.gnome.org/pub/gnome/sources/gtkhtml/
-Source0: http://ftp.gnome.org/pub/GNOME/sources/gtkhtml/%{oname}-%{version}.tar.xz
+Source0: http://ftp.gnome.org/pub/GNOME/sources/gtkhtml/4.6/%{oname}-%{version}.tar.xz
 
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(enchant) >= 1.1.7
@@ -97,4 +97,57 @@ find %{buildroot} -name "*.la" -delete
 %{_libdir}/*.so
 %{_includedir}/*
 %{_libdir}/pkgconfig/*
+
+
+
+%changelog
+* Tue Nov 13 2012 Arkady L. Shane <ashejn@rosalab.ru> 4.6.1-1
+- update to 4.6.1
+
+* Mon Oct  1 2012 Arkady L. Shane <ashejn@rosalab.ru> 4.6.0-1
+- update to 4.6.0
+
+* Mon Aug 13 2012 Matthew Dawkins <mattydaw@mandriva.org> 4.4.4-1
++ Revision: 814437
+- update to new version 4.4.4
+
+* Tue Jun 19 2012 Matthew Dawkins <mattydaw@mandriva.org> 4.4.3-1
++ Revision: 806164
+- update to new version 4.4.3
+
+* Wed May 16 2012 Matthew Dawkins <mattydaw@mandriva.org> 4.4.2-1
++ Revision: 799173
+- update to new version 4.4.2
+
+* Mon Apr 23 2012 Alexander Khrukin <akhrukin@mandriva.org> 4.4.1-1
++ Revision: 792841
+- version update 4.4.1
+
+* Mon Jan 09 2012 Götz Waschk <waschk@mandriva.org> 4.2.3-1
++ Revision: 758811
+- new version
+
+* Thu Dec 08 2011 Matthew Dawkins <mattydaw@mandriva.org> 4.2.2-1
++ Revision: 739035
+- added patch0
+- fixed configure
+- added p0 for g_thread_init deprecation
+- new version 4.2.2
+- cleaned up spec
+- removed .la files
+- removed defattr, clean section, BuildRoot, mkrel
+- converted BRs to pkgconfig
+
+* Wed Aug 31 2011 Götz Waschk <waschk@mandriva.org> 4.0.2-1
++ Revision: 697582
+- new version
+- xz tarball
+
+* Tue Apr 26 2011 Funda Wang <fwang@mandriva.org> 4.0.1-1
++ Revision: 659110
+- update to new version 4.0.1
+
+* Mon Apr 04 2011 Funda Wang <fwang@mandriva.org> 4.0.0-1
++ Revision: 650155
+- import gtkhtml4
 
