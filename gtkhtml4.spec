@@ -10,7 +10,7 @@
 Summary:	HTML rendering/editing library
 Name:		gtkhtml4
 Version:	4.6.3
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://ftp.gnome.org/pub/gnome/sources/gtkhtml/
