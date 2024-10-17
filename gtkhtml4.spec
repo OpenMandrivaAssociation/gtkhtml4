@@ -13,7 +13,7 @@ Version:	4.6.3
 Release:	9
 License:	LGPLv2+
 Group:		Graphical desktop/GNOME
-Url:		http://ftp.gnome.org/pub/gnome/sources/gtkhtml/
+Url:		https://ftp.gnome.org/pub/gnome/sources/gtkhtml/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtkhtml/%{url_ver}/%{oname}-%{version}.tar.xz
 
 BuildRequires:	intltool
