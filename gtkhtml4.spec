@@ -16,6 +16,11 @@ Group:		Graphical desktop/GNOME
 Url:		https://ftp.gnome.org/pub/gnome/sources/gtkhtml/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtkhtml/%{url_ver}/%{oname}-%{version}.tar.xz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(cairo) >= 1.10.0
 BuildRequires:	pkgconfig(enchant) >= 1.1.7
